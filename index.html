@@ -4,12 +4,257 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grocery Site</title>
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Hi this is a bootstrap file.</h1>
+
+    <!-- navbar  -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">
+                    <img src="https://as1.ftcdn.net/v2/jpg/02/98/18/60/1000_F_298186090_Rimyxol4jsYvYbQg1i6sttQ5N3oebXgt.jpg" alt="Bootstrap" width="70" height="44">
+                </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Grocery Item</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Fruits</a>
+                  </li>
+                 
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- carousal -->
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/MIDNIGHT_SALE_BADGE.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/SUPER_MEGA_SALE_PODIUM_LANDSCAPE.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br />
+      <h2 class="text-primary text-center">Our Grocery Items</h2>
+      <!-- cards grocery  -->
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="./images/yellow-banana-fruit.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fresh Yellow Banana</h5>
+              <p class="card-text">Fresh Yellow Banana .
+                Minimum Order : 30 pieces.
+                
+                Price : BDT 500TK. Delivery Charge: 60 tk .</p>
+              <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Product Details</button>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Fresh Yellow Banana</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    Fresh Yellow Banana .
+    <p>Minimum Order : 30 pieces.</p>
+    Price : BDT 500TK.
+    Delivery Charge: 60 tk .
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/red-lychee-fruit-placed-basket.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Lychee</h5>
+              <p class="card-text">Red-sack-lychee-buscket . Minimum Order : 30 pieces. Price : BDT 500TK. Delivery Charge: 60 tk .</p>
+              <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Product Details</button>
+
+              <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasBottomLabel">Red Lychee.</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">
+                    Fresh red-lychee-fruit-placed-basket .
+                    <p>Minimum Order : 30 pieces.</p>
+                    Price : BDT 500TK.
+                    Delivery Charge: 60 tk .
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/fresh-grapefruits.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fresh Grapefruit</h5>
+              <p class="card-text">Fresh Grapefruit . Minimum Order : 30 pieces. Price : BDT 500TK. Delivery Charge: 60 tk .</p>
+              <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Product Details</button>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    ...
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/potato-sack-isolated-white.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Potato</h5>
+              <p class="card-text">Fresh Potato . Minimum Order : 30 pieces. Price : BDT 500TK. Delivery Charge: 60 tk .</p>
+              <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Product Details</button>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    ...
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/sack-rice-seed-with-white-rice-small-wooden-spoon-rice-plant.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rice Seed</h5>
+              <p class="card-text">Rice Seed . Minimum Order : 30 pieces. Price : BDT 500TK. Delivery Charge: 60 tk .</p>
+              <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Product Details</button>
+
+              <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">
+                  ...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/veg-biryani-veg-pulav-served-round-brass-bowl-selective-focus.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bashmoti Rice</h5>
+              <p class="card-text">Rice Seed . Minimum Order : 30 pieces. Price : BDT 500TK. Delivery Charge: 60 tk .</p>
+              <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Product Details</button>
+
+              <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">
+                  ...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- pagination  -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+
+
+      <!-- form  -->
+      <h1 class="Text-primary text-center">Put Some Information here.</h1>
+      <div class="w-50 d-flex justify-content-center flex-column mx-auto">
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>Your Division</option>
+          <option value="1">Dhaka</option>
+          <option value="2">Sylhet</option>
+          <option value="3">Chattagram</option>
+        </select>
+      </div>
+      
+      <div class="input-group mb-3">
+        <select class="form-select" id="inputGroupSelect02">
+          <option selected>Choose Payment</option>
+          <option value="1">Cash On Delivery</option>
+          <option value="2">M.M.F.</option>
+          <option value="3">Bank Card</option>
+        </select>
+        <label class="input-group-text" for="inputGroupSelect02">Options</label>
+      </div>
+      
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-secondary" type="button">Button</button>
+        <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+          <option selected>Choose Shopping Preference</option>
+          <option value="1">Fruits</option>
+          <option value="2">Grocery</option>
+        </select>
+      </div>
+      
+      <div class="input-group">
+        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+          <option selected>Choose Gender</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+        </select>
+        <button class="btn btn-outline-secondary" type="button">Button</button>
+      </div>
+    </div>
+
+
 
 
 
